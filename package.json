@@ -17,7 +17,6 @@
     "jit-grunt": "^0.10.0"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "bower install",
     "build": "grunt && cd dist && tar cvzf kafka-connect-ui.tar.gz ."
@@ -36,8 +35,7 @@
     "url": "https://github.com/Landoop/kafka-connect-ui/issues"
   },
   "homepage": "https://github.com/Landoop/kafka-connect-ui#readme",
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
+  "overrides": {
+    "graceful-fs": "^4.2.11"
   }
 }
-
